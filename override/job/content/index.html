@@ -1,0 +1,22 @@
+<!--[*]
+[tt=mini][/tt]
+[*]-->
+
+<div id="bos" class="mod-job">
+	<div class="static">
+		<div id="mod-job-container" style="min-height: 220px;">
+			<div style="width: 300px; margin: 150px auto; text-align: center">
+				Идет загрузка приложения "Бартер задач" <br />
+				<img src="/images/loading.gif" />  Пожалуйста, подождите...
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+	Brick.ff('bos', 'os', function(){
+		var el = document.getElementById('mod-job-container');
+		new Brick.mod.bos.PageManagerWidget(el, 'job/wspace/ws');
+	});
+
+</script>
